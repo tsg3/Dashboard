@@ -1,7 +1,7 @@
 package org.tec.datastructures;
 public class LinkedList <V> {
 
-	private LinkedListNode <V> root;
+	public LinkedListNode <V> root;
 
 	public LinkedList(){
 		root = null;
@@ -72,6 +72,17 @@ public class LinkedList <V> {
         data += "]";
         System.out.println(data);
     }
+	public LinkedListNode<V> pos (int pos){
+		if (pos<0||pos>length())
+			return null;
+		LinkedListNode<V> node = root;
+		int i = 0;
+		while (i<pos){
+			node = node.getNext();
+			i++;
+		}
+		return node;
+	}
 	public static void main (String[] args){
 		LinkedList <String> Lista = new LinkedList <String>();
 		Lista.add ("34td1");
