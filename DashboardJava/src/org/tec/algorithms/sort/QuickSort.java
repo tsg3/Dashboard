@@ -48,7 +48,7 @@ public class QuickSort<V> implements Comparable<V>
    arr[] --> Array to be sorted,
    low  --> Starting index,
    high  --> Ending index */
- void sort(LinkedList<V> list, int low, int high)
+ public void sort(LinkedList<V> list, int low, int high)
  {
      if (low < high)
      {

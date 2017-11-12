@@ -52,6 +52,7 @@ public class Queue <V> {
 		System.out.println(queue.peek());
 
 		queue.pop();
+		
 		System.out.println(queue.peek());
 	}
 }

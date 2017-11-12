@@ -96,6 +96,7 @@ public class CircularLinkedList <V> {
 		Lista.delete (3);
 		Lista.print ();
 		System.out.println(Lista.length ());
+		System.out.println(Lista.hashCode());
 		Lista.print2();
 	}
 }

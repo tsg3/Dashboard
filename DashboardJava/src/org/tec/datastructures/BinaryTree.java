@@ -2,7 +2,7 @@ package org.tec.datastructures;
 
 public class BinaryTree <V> {
 
-	private BinaryTreeNode<V> root;
+	public BinaryTreeNode<V> root;
 
 	public BinaryTree (){
 		root = null;

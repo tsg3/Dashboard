@@ -2,7 +2,7 @@ package org.tec.datastructures;
 
 public class SplayTree<V> implements Comparable<V> {
 
-    private SplayTreeNode<V> root;
+    public SplayTreeNode<V> root;
 
     public SplayTree() { }
 
@@ -179,7 +179,7 @@ public class SplayTree<V> implements Comparable<V> {
         node.setValue(min);
     }
 
-    private V findMin(SplayTreeNode<V> node) {
+    public V findMin(SplayTreeNode<V> node) {
         if (!node.leftExists()) {
             node.setDeleted(true);
             return node.getValue();
@@ -239,7 +239,7 @@ public class SplayTree<V> implements Comparable<V> {
     	System.out.println(st.toString());;
     	st.insert(7);
     	System.out.println(st.toString());;
-    	st.insert(1);
+    	System.out.println(st.search(2));
     	System.out.println(st.toString());;
 
     }

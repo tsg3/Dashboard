@@ -19,7 +19,7 @@ public class BubbleSort<V> implements Comparable<V>{
         }
     }
      @SuppressWarnings("unchecked")
-	void bubbleSort(LinkedList<V> list) {
+	public void bubbleSort(LinkedList<V> list) {
         int n = list.length();
         LinkedListNode<V> temp = new LinkedListNode<V>();
         LinkedListNode<V> tempj;
@@ -37,20 +37,6 @@ public class BubbleSort<V> implements Comparable<V>{
         }
     }
     public static void main(String[] args) {
-                /*int arr[] ={3,60,35,2,45,320,5};
-
-                System.out.println("Array Before Bubble Sort");
-                for(int i=0; i < arr.length; i++){
-                        System.out.print(arr[i] + " ");
-                }
-                System.out.println();
-
-                bubbleSort(arr);//sorting array elements using bubble sort
-
-                System.out.println("Array After Bubble Sort");
-                for(int i=0; i < arr.length; i++){
-                        System.out.print(arr[i] + " ");
-                }*/
     	BubbleSort<Integer> bS = new BubbleSort<Integer>();
     	LinkedList <Integer> Lista = new LinkedList <Integer>();
 		Lista.add (1);
@@ -70,6 +56,8 @@ public class BubbleSort<V> implements Comparable<V>{
 
         System.out.println("Array After Bubble Sort");
         Lista.print2();
+
+
         }
 	@Override
 	public int compareTo(V value) {

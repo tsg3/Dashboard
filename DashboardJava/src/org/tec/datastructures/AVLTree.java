@@ -139,6 +139,9 @@ AVLTreeNode<V> insert(AVLTreeNode<V> node, V value) {
       /  \     \
      10  25    50
      */
+     
+     System.out.println(tree.getBalance(tree.root.right));
+     System.out.println(tree.getBalance(tree.root.left));
      System.out.println("Preorder traversal" +
                      " of constructed tree is : ");
      tree.preOrder(tree.root);

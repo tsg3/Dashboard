@@ -10,6 +10,7 @@ public class ShellSort<V> implements Comparable<V>{
 	}
 
  @SuppressWarnings("unchecked")
+public
 /* function to sort arr using shellSort */
  int shellSort(LinkedList<V> list)
  {

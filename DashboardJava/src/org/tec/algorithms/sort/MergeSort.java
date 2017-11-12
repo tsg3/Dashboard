@@ -70,7 +70,7 @@ public class MergeSort<V> implements Comparable<V>
 
     // Main function that sorts arr[l..r] using
     // merge()
-    void sort(LinkedList<V> list, int l, int r)
+    public void sort(LinkedList<V> list, int l, int r)
     {
         if (l < r)
         {
